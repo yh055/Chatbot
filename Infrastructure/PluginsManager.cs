@@ -6,7 +6,7 @@ using DiceRoller;
 using Echo;
 using ListPlugin;
 using CountWord;
-using TimeAndDatePlugin;
+using TimeAndDate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
