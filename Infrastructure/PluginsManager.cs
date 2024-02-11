@@ -6,6 +6,7 @@ using DiceRoller;
 using Echo;
 using ListPlugin;
 using CountWord;
+using TimeAndDatePlugin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,8 +50,11 @@ namespace Infrastructure
             {
                 return new CountWordPlugin();
             }
+            else if (id == TimeAndDatePlugin._Id)
+            {
+                return new TimeAndDatePlugin();
+            }
             else
-
             {
                 throw new NotImplementedException();
             }
