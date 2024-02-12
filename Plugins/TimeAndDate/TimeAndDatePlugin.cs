@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace TimeAndDate
 {
-    public class TimeAndDatePlugin : IPluginWithScheduler
+    public class TimeAndDatePlugin : IPlugin
     {
-        IScheduler _scheduler;
+    
 
-        public TimeAndDatePlugin(IScheduler scheduler) => _scheduler = scheduler;
+       
 
         public static string _Id = "TimeAndDate";
         public string Id => _Id;
@@ -19,7 +19,7 @@ namespace TimeAndDate
         {
             DateTime currentTime = DateTime.Now;
 
-            return new PluginOutput(currentTime);
+            return new PluginOutput(currentTime.ToString());
 
         }
 
